@@ -46,7 +46,7 @@ public class GameController {
         instantiateModel();
         instantiateListeners();
         javax.swing.SwingUtilities.invokeLater(this::instantiateView);
-        model.run();
+        model.start();
     }
 
     /**
