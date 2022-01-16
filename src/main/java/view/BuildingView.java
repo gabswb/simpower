@@ -39,21 +39,21 @@ public class BuildingView extends JButton implements BuildingViewable{
 
         switch (type) { // choisit l'image en fonction du type de bâtiment
 
-            case NUCLEAR -> resourceWithoutMoney = getClass().getResource("/main/resources/nuclear.png");
-            case GAS -> resourceWithoutMoney = getClass().getResource("/main/resources/gaspower.png");
-            case COAL -> resourceWithoutMoney = getClass().getResource("/main/resources/coalpower.png");
-            case WATER -> resourceWithoutMoney = getClass().getResource("/main/resources/hydropower.png");
-            case SOLAR -> resourceWithoutMoney = getClass().getResource("/main/resources/panel.png");
-            case WIND -> resourceWithoutMoney = getClass().getResource("/main/resources/turbine.png");
+            case NUCLEAR -> resourceWithoutMoney = getClass().getResource("/images/nuclear.png");
+            case GAS -> resourceWithoutMoney = getClass().getResource("/images/gaspower.png");
+            case COAL -> resourceWithoutMoney = getClass().getResource("/images/coalpower.png");
+            case WATER -> resourceWithoutMoney = getClass().getResource("/images/hydropower.png");
+            case SOLAR -> resourceWithoutMoney = getClass().getResource("/images/panel.png");
+            case WIND -> resourceWithoutMoney = getClass().getResource("/images/turbine.png");
             case HOUSE -> {
-                resourceWithoutMoney = getClass().getResource("/main/resources/house.png");
-                resourceWithMoney = getClass().getResource("/main/resources/house_money.png");
+                resourceWithoutMoney = getClass().getResource("/images/house.png");
+                resourceWithMoney = getClass().getResource("/images/house_money.png");
             }
             case APPARTEMENT -> {
-                resourceWithoutMoney = getClass().getResource("/main/resources/appartement.png");
-                resourceWithMoney = getClass().getResource("/main/resources/appartement_money.png");
+                resourceWithoutMoney = getClass().getResource("/images/appartement.png");
+                resourceWithMoney = getClass().getResource("/images/appartement_money.png");
             }
-            default -> resourceWithoutMoney = getClass().getResource("/main/resources/grass.png");
+            default -> resourceWithoutMoney = getClass().getResource("/images/grass.png");
         }
 
         try {

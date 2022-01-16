@@ -26,21 +26,21 @@ public class BoxPanel extends JPanel implements BoxViewable{
         URL resource;
 
         //récupération du bon icon selon les caractéristiques de la Box dans le main.java.model
-        if (boxes[x][y].getWater()!=0) {resource = getClass().getResource("/main/resources/water.png");}
-        else if (boxes[x][y].hasCoal() && boxes[x][y].getWind()<=15 && boxes[x][y].getSun()<=15) {resource = getClass().getResource("/main/resources/coal.png");}
-        else if (boxes[x][y].hasGas() && boxes[x][y].getWind()<=15 && boxes[x][y].getSun()<=15) {resource = getClass().getResource("/main/resources/gas.png");}
-        else if (boxes[x][y].hasUranium() && boxes[x][y].getWind()<=15 && boxes[x][y].getSun()<=15) {resource = getClass().getResource("/main/resources/uranium.png");}
+        if (boxes[x][y].getWater()!=0) {resource = getClass().getResource("/images/water.png");}
+        else if (boxes[x][y].hasCoal() && boxes[x][y].getWind()<=15 && boxes[x][y].getSun()<=15) {resource = getClass().getResource("/images/coal.png");}
+        else if (boxes[x][y].hasGas() && boxes[x][y].getWind()<=15 && boxes[x][y].getSun()<=15) {resource = getClass().getResource("/images/gas.png");}
+        else if (boxes[x][y].hasUranium() && boxes[x][y].getWind()<=15 && boxes[x][y].getSun()<=15) {resource = getClass().getResource("/images/uranium.png");}
 
-        else if (boxes[x][y].getWind()>15 && !boxes[x][y].hasCoal() && !boxes[x][y].hasGas() && !boxes[x][y].hasUranium()) {resource = getClass().getResource("/main/resources/wind.png");}
-        else if (boxes[x][y].getWind()>15 && boxes[x][y].hasCoal()) {resource = getClass().getResource("/main/resources/coal_wind.png");}
-        else if (boxes[x][y].getWind()>15 && boxes[x][y].hasGas()) {resource = getClass().getResource("/main/resources/gas_wind.png");}
-        else if (boxes[x][y].getWind()>15 && boxes[x][y].hasUranium()) {resource = getClass().getResource("/main/resources/uranium_wind.png");}
+        else if (boxes[x][y].getWind()>15 && !boxes[x][y].hasCoal() && !boxes[x][y].hasGas() && !boxes[x][y].hasUranium()) {resource = getClass().getResource("/images/wind.png");}
+        else if (boxes[x][y].getWind()>15 && boxes[x][y].hasCoal()) {resource = getClass().getResource("/images/coal_wind.png");}
+        else if (boxes[x][y].getWind()>15 && boxes[x][y].hasGas()) {resource = getClass().getResource("/images/gas_wind.png");}
+        else if (boxes[x][y].getWind()>15 && boxes[x][y].hasUranium()) {resource = getClass().getResource("/images/uranium_wind.png");}
 
-        else if (boxes[x][y].getSun()>15 && !boxes[x][y].hasCoal() && !boxes[x][y].hasGas() && !boxes[x][y].hasUranium()) {resource = getClass().getResource("/main/resources/sun.png");}
-        else if (boxes[x][y].getSun()>15 && boxes[x][y].hasCoal()) {resource = getClass().getResource("/main/resources/coal_sun.png");}
-        else if (boxes[x][y].getSun()>15 && boxes[x][y].hasGas()) {resource = getClass().getResource("/main/resources/gas_sun.png");}
-        else if (boxes[x][y].getSun()>15 && boxes[x][y].hasUranium()) {resource = getClass().getResource("/main/resources/uranium_sun.png");}
-        else{resource = getClass().getResource("/main/resources/grass.png");}
+        else if (boxes[x][y].getSun()>15 && !boxes[x][y].hasCoal() && !boxes[x][y].hasGas() && !boxes[x][y].hasUranium()) {resource = getClass().getResource("/images/sun.png");}
+        else if (boxes[x][y].getSun()>15 && boxes[x][y].hasCoal()) {resource = getClass().getResource("/images/coal_sun.png");}
+        else if (boxes[x][y].getSun()>15 && boxes[x][y].hasGas()) {resource = getClass().getResource("/images/gas_sun.png");}
+        else if (boxes[x][y].getSun()>15 && boxes[x][y].hasUranium()) {resource = getClass().getResource("/images/uranium_sun.png");}
+        else{resource = getClass().getResource("/images/grass.png");}
 
         try {
             assert resource != null;
