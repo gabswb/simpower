@@ -1,5 +1,41 @@
 # sim-power
+## Presentation
+
+This project was carried out as part of the ap4b subject (object oriented design in Java and UML). 
+This project is a management game, in which you build your city. This game simulates the electrical distribution of the play area. 
+The goal of the player is to be able to supply the entire population located on the playing area while
+minimising energy costs for residents and minimising pollution.
+
+## Installing and running
+
+This programm have been tested on jdk 16.0.1 for both methods
+
+### Get source files
+First you need to clone this repository :
+```
+git clone https://github.com/gabswb/ap4b-simpower.git
+cd ap4b-simpower
+```
+Or you can just download the zip archive of this repo
+
+### Compile and run with Maven
+ - You need to have [Maven](https://maven.apache.org/download.cgi) installed on your computer
+```
+mvn compile
+mvn clean package
+```
+This will create in target folder a .jar not executable !
+To execute it run this :
+```
+java -cp target/Simpower-1.0.jar main.java.Main
+```
+
+### Compile and run with javac
+```
+cd src
+mkdir classes
+javac -d classes main/java/*.java
+java -cp ./main/resources;./classes main.java.Main
+```
 
 
-
-L'objectif de ce sujet est de simuler de façon ludique l'acheminement en électricité de la zone de jeu. L'objectif du joueur est de pouvoir alimenter toute la population située sur la zone de jeu tout en minimisant le cout de l'énergie pour les habitants ainsi que la pollution (et éventuellement les nuisances/accidents)Il  faut  donc  définir  une  zone  de  jeu.  Celle-ci  peut  être  identique  à  chaque  partie  ou  générée aléatoirement.  Cette  zone  devra  comporter  des  zones  pouvant  être  exploitées  pour  produire  de l'électricité  (vent,  cours  d'eau,  soleil,  minerais...).  Les  habitants  pourront  s'installer  n'importe  où sur  la  zone  tout  en  évitant  les  zones  où  il  y  a  déjà  une  construction  installée.  Le  nombre d'habitants peut être relié à un niveau de satisfaction lié au prix de l'électricité et/ou à la pollution générée. Il peut donc varier en cours de jeux. Leur profil de consommation sera identique chaque jour (même si on peut imaginer faire des variations sur le profil en fonction du type d'habitation). A tout moment, il faut équilibrer la production d'électricité et la consommation des habitants. Pour cela, on peut jouer sur l'inertie de production des sources (i.e. le temps nécessaire pour changer le  niveau  de  production)  ou  utiliser  des  systèmes  de  stockage  stationnaires  (batterie  de  grande capacité  par  exemple).  Les  sources  d'électricité  peuvent  être  des  centrales  électriques  de plusieurs types (charbon, gaz, nucléaire...), des barrages, des panneaux solaires, des éoliennes...  Concernant la mécanique de jeu, on peut se baser sur un mécanisme asynchrone. La zone de jeu possède  des  caractéristiques  dynamiques  (vent,  début  des  cours  d'eau,  ensoleillement....)  qui peuvent  évoluer  en  cours  de  jeu.  Le  joueur  peut  rajouter  quand  il  le  veut  des  éléments  à  tout moment.  Bien  évidemment  les  éléments  ne  sont  pas  gratuit  et  il  faut  donc  mettre  en  place  un mécanisme de ressources permettant de construire tel ou tel élément.
