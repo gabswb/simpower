@@ -8,7 +8,7 @@ minimising energy costs for residents and minimising pollution.
 
 ## Installing and running
 
-This programm have been tested on jdk 16.0.1 for both methods
+This program have been tested on jdk 16.0.1 for both methods
 
 ### Get source files
 First you need to clone this repository :
