@@ -66,7 +66,7 @@ java -cp ./main/resources;./classes main.java.Main
 java -cp ./main/resources:./classes main.java.Main
 ```
 
-### Use docker container
+### Use Docker container
 
 Build the docker image
 
