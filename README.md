@@ -86,7 +86,7 @@ If you run it just like this you will have a java.awt.HeadlessException Exceptio
 
 You need to :
 
-- Install [vcxsrv]{https://sourceforge.net/projects/vcxsrv/}
+- Install [vcxsrv](https://sourceforge.net/projects/vcxsrv/)
   
 - Start the Xlaunch
   
